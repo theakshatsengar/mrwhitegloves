@@ -59,11 +59,11 @@ export function LandingPage() {
 
             {/* Car Image - Fixed dimensions */}
             <div className="mt-8 flex justify-center">
-              <div className="relative w-full max-w-[1166px]">
+              <div className="relative w-full max-w-[1166px] aspect-[1166/356]">
                 <img
-                  src="/placeholder.svg?height=356&width=1166&text=Professional+Car+Maintenance"
+                  src="/images/image.png?height=356&width=1166&text=Professional+Car+Maintenance"
                   alt="Professional car maintenance"
-                  className="rounded-xl shadow-xl w-full h-[356px] object-cover"
+                  className="rounded-xl shadow-xl w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-background/20 to-transparent" />
               </div>
