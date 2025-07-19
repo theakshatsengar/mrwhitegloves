@@ -49,7 +49,7 @@ export default function CarHealthPage() {
               🩺 Comprehensive Car Health
             </Badge>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-              Unlock Your Car's Full Potential
+              Unlock Your Cars Full Potential
             </h1>
             <p className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-8">
               Get a comprehensive health check and discover its true resale value.
@@ -87,7 +87,7 @@ export default function CarHealthPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Know Resale Value</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Get an accurate estimate of your car's market value for future sales.
+                Get an accurate estimate of your cars market value for future sales.
               </p>
             </Card>
             <Card className="p-6 text-center hover:shadow-lg transition-shadow">
@@ -96,7 +96,7 @@ export default function CarHealthPage() {
               </div>
               <h3 className="text-xl font-bold mb-2">Custom Packages</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Receive tailored recommendations to enhance your car's value and longevity.
+                Receive tailored recommendations to enhance your cars value and longevity.
               </p>
             </Card>
           </div>
@@ -186,7 +186,7 @@ export default function CarHealthPage() {
         <section className="mb-12">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold mb-2">Our Simple Procedure</h2>
-            <p className="text-sm text-muted-foreground">Here's what happens after you submit your details.</p>
+            <p className="text-sm text-muted-foreground">Heres what happens after you submit your details.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="p-6 text-center">
@@ -213,7 +213,7 @@ export default function CarHealthPage() {
               </div>
               <h3 className="text-lg font-semibold mb-2">Custom Package Recommendation</h3>
               <p className="text-sm text-muted-foreground">
-                Our team will recommend a customized "Mr. White's Love Car Care" package to increase your car's resale
+                Our team will recommend a customized Mr. Whites Love Car Care package to increase your cars resale
                 value.
               </p>
             </Card>

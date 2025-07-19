@@ -332,7 +332,7 @@ export function LandingPage() {
                       <CheckCircle className="w-3 h-3 text-white" />
                     </div>
                     <span className="text-sm">
-                      We provide India's most comprehensive health checks, covering 50+ critical components
+                      We provide Indias most comprehensive health checks, covering 50+ critical components
                     </span>
                   </div>
 
