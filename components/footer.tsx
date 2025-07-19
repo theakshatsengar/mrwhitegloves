@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
@@ -10,11 +10,11 @@ export function Footer() {
       <section className="bg-card py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
-            <h2 className="text-2xl font-bold text-foreground mb-2">Join CarCare</h2>
+            <h2 className="text-2xl font-bold text-blue-600 mb-2">Join CarCare</h2>
             <p className="text-sm text-muted-foreground">Receive pricing updates, shopping tips & more!</p>
           </div>
-          <div className="w-full md:w-auto flex justify-center">
-            <div className="flex items-center bg-muted rounded-full p-1 pr-2 w-full max-w-md">
+          <div className="w-full md:w-auto flex justify-center border border-blue-200 dark:border-blue-800 rounded-full">
+            <div className="flex items-center bg-muted rounded-full p-1 pr-1 w-full max-w-md">
               <Input
                 type="email"
                 placeholder="Your email address"
@@ -28,112 +28,95 @@ export function Footer() {
         </div>
       </section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm">
-          {/* Company */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+          {/* Pages */}
           <div>
-            <h3 className="font-semibold mb-3">Company</h3>
+            <h3 className="font-semibold mb-3">Pages</h3>
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">About Us</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="/">Home</a>
                 </Button>
               </li>
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Blog</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="/products-services">Products & Services</a>
                 </Button>
               </li>
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="/products-services">Services</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="/car-health">Car Health</a>
                 </Button>
               </li>
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">FAQs</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="/car-marketplace">Car Marketplace</a>
                 </Button>
               </li>
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Terms</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Community</a>
                 </Button>
               </li>
               <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Contact Us</a>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Franchise</a>
                 </Button>
               </li>
             </ul>
           </div>
 
-          {/* Quick Links */}
+          {/* Reach Out! */}
           <div>
-            <h3 className="font-semibold mb-3">Quick Links</h3>
-            <ul className="space-y-2 text-xs text-muted-foreground">
-              <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Get in Touch</a>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Help center</a>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">Live chat</a>
-                </Button>
-              </li>
-              <li>
-                <Button variant="link" className="p-0 h-auto text-xs" asChild>
-                  <a href="#">How it works</a>
-                </Button>
-              </li>
-            </ul>
-          </div>
-
-          {/* Our Brands */}
-          <div>
-            <h3 className="font-semibold mb-3">Our Brands</h3>
-            <ul className="space-y-2 text-xs text-muted-foreground">
-              <li>Toyota</li>
-              <li>Porsche</li>
-              <li>Audi</li>
-              <li>BMW</li>
-              <li>Ford</li>
-              <li>Nissan</li>
-              <li>Peugeot</li>
-              <li>Volkswagen</li>
-            </ul>
-          </div>
-
-          {/* Vehicles Type */}
-          <div>
-            <h3 className="font-semibold mb-3">Vehicles Type</h3>
-            <ul className="space-y-2 text-xs text-muted-foreground">
-              <li>Sedan</li>
-              <li>Hatchback</li>
-              <li>SUV</li>
-              <li>Hybrid</li>
-              <li>Electric</li>
-              <li>Coupe</li>
-              <li>Truck</li>
-              <li>Convertible</li>
-            </ul>
-          </div>
-
-          {/* Sale Hours */}
-          <div>
-            <h3 className="font-semibold mb-3">Sale Hours</h3>
+            <h3 className="font-semibold mb-3">Reach Out!</h3>
             <div className="space-y-2 text-xs text-muted-foreground">
-              <p>Monday - Friday: 09:00AM - 09:00PM</p>
-              <p>Saturday: 09:00AM - 07:00PM</p>
-              <p>Sunday: Closed</p>
+              <p>81/2-3, Asha Krishna Kunj, Jamshedpur, Jharkhand, India, 831013</p>
+              <p>Monday-Saturday (9AM-6PM)</p>
+              <p>Tel: +91 92790 11375</p>
+              <p>Email: info@mrwhitegloves.com</p>
             </div>
+          </div>
 
-            <h4 className="font-semibold mt-4 mb-2">Connect With Us</h4>
+          {/* Policy */}
+          <div>
+            <h3 className="font-semibold mb-3">Policy</h3>
+            <ul className="space-y-2 text-xs text-muted-foreground">
+              <li>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Privacy Policy</a>
+                </Button>
+              </li>
+              <li>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Terms & Conditions</a>
+                </Button>
+              </li>
+              <li>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Shipping Policy</a>
+                </Button>
+              </li>
+              <li>
+                <Button variant="ghost" className="p-0 h-auto text-xs text-muted-foreground hover:text-foreground" asChild>
+                  <a href="#">Return & Refunds</a>
+                </Button>
+              </li>
+            </ul>
+          </div>
+
+          {/* Support */}
+          <div>
+            <h3 className="font-semibold mb-3">Support</h3>
+            <div className="space-y-2 text-xs text-muted-foreground mb-4">
+              <p>Tel: +91 92790 11375</p>
+              <p>Email: info@mrwhitegloves.com</p>
+            </div>
             <div className="flex space-x-3">
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
+                <a href="#">
+                  <Instagram className="h-4 w-4" />
+                </a>
+              </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
                 <a href="#">
                   <Facebook className="h-4 w-4" />
@@ -141,12 +124,7 @@ export function Footer() {
               </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
                 <a href="#">
-                  <Twitter className="h-4 w-4" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
-                <a href="#">
-                  <Instagram className="h-4 w-4" />
+                  <Youtube className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
@@ -159,7 +137,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-6 pt-6 text-center text-xs text-muted-foreground">
-          <p>© 2024 CarCare. All rights reserved.</p>
+          <p>© 2023 by Mr. White Gloves. All Rights Reserved</p>
         </div>
       </div>
     </footer>
