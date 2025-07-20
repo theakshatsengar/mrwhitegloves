@@ -82,52 +82,60 @@ export function LandingPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Card className="p-4 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 text-center hover:shadow-lg transition-shadow flex flex-col">
               <img
                 src="/images/products/dashboard_polish.png"
                 alt="Dashboard Polish"
                 className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
-              <h3 className="font-semibold text-sm mb-1">Dashboard Polish</h3>
-              <p className="text-xs text-muted-foreground mb-1">Shine & protect your dashboard</p>
-              <div className="text-sm font-bold text-primary mb-3">₹399</div>
-              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
+              <div className="flex-1 flex flex-col justify-end">
+                <h3 className="font-semibold text-sm mb-1">Dashboard Polish</h3>
+                <p className="text-xs text-muted-foreground mb-1">Shine & protect your dashboard</p>
+                <div className="text-sm font-bold text-primary mb-3">₹399</div>
+                <Button size="sm" variant="outline" className="w-full text-xs hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">Add to Cart</Button>
+              </div>
             </Card>
 
-            <Card className="p-4 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 text-center hover:shadow-lg transition-shadow flex flex-col">
               <img
                 src="/images/products/car_shampoo.png"
                 alt="Car Shampoo"
                 className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
-              <h3 className="font-semibold text-sm mb-1">Car Shampoo</h3>
-              <p className="text-xs text-muted-foreground mb-1">Gentle, effective cleaning</p>
-              <div className="text-sm font-bold text-primary mb-3">₹249</div>
-              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
+              <div className="flex-1 flex flex-col justify-end">
+                <h3 className="font-semibold text-sm mb-1">Car Shampoo</h3>
+                <p className="text-xs text-muted-foreground mb-1">Gentle, effective cleaning</p>
+                <div className="text-sm font-bold text-primary mb-3">₹249</div>
+                <Button size="sm" variant="outline" className="w-full text-xs hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">Add to Cart</Button>
+              </div>
             </Card>
 
-            <Card className="p-4 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 text-center hover:shadow-lg transition-shadow flex flex-col">
               <img
                 src="/images/products/tire_shiner.png"
                 alt="Tire Shiner"
                 className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
-              <h3 className="font-semibold text-sm mb-1">Tire Shiner</h3>
-              <p className="text-xs text-muted-foreground mb-1">Glossy, new-look tires</p>
-              <div className="text-sm font-bold text-primary mb-3">₹299</div>
-              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
+              <div className="flex-1 flex flex-col justify-end">
+                <h3 className="font-semibold text-sm mb-1">Tire Shiner</h3>
+                <p className="text-xs text-muted-foreground mb-1">Glossy, new-look tires</p>
+                <div className="text-sm font-bold text-primary mb-3">₹299</div>
+                <Button size="sm" variant="outline" className="w-full text-xs hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">Add to Cart</Button>
+              </div>
             </Card>
 
-            <Card className="p-4 text-center hover:shadow-lg transition-shadow">
+            <Card className="p-4 text-center hover:shadow-lg transition-shadow flex flex-col">
               <img
                 src="/images/products/glass_cleaner.png"
                 alt="Glass Cleaner"
                 className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
-              <h3 className="font-semibold text-sm mb-1">Glass Cleaner</h3>
-              <p className="text-xs text-muted-foreground mb-1">Crystal clear finish</p>
-              <div className="text-sm font-bold text-primary mb-3">₹249</div>
-              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
+              <div className="flex-1 flex flex-col justify-end">
+                <h3 className="font-semibold text-sm mb-1">Glass Cleaner</h3>
+                <p className="text-xs text-muted-foreground mb-1">Crystal clear finish</p>
+                <div className="text-sm font-bold text-primary mb-3">₹249</div>
+                <Button size="sm" variant="outline" className="w-full text-xs hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">Add to Cart</Button>
+              </div>
             </Card>
           </div>
         </div>
