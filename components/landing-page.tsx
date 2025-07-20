@@ -308,7 +308,7 @@ export function LandingPage() {
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src="/images/main_two.png"
+                    src="/images/form.png"
                     alt="Car Health Check"
                     className="w-full h-80 md:h-96 object-cover"
                   />

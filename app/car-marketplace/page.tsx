@@ -71,10 +71,14 @@ export default function CarMarketplacePage() {
       <Navigation />
 
       {/* Main Hero Section */}
-      <section className="py-12 sm:py-20 bg-background text-foreground">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <Badge className="mb-4 bg-muted text-muted-foreground text-xs">Car Marketplace</Badge>
+      <section className="relative overflow-hidden py-12 sm:py-20 mb-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10" />
+        <div className="absolute inset-0 bg-muted/20" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(156, 146, 172, 0.1) 1px, transparent 0)', backgroundSize: '20px 20px' }} />
+        <div className="relative px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 text-xs">
+              🚗 Car Marketplace
+            </Badge>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
               Buy & Sell Cars with Confidence
             </h1>
@@ -96,35 +100,33 @@ export default function CarMarketplacePage() {
               </Button>
             </div>
             {/* Image below buttons */}
-            <div className="mt-12 flex justify-center">
+            {/* <div className="mt-12 flex justify-center">
               <img
                 src="/placeholder.svg?height=356&width=1566&text=Marketplace+Hero+Image"
                 alt="Marketplace Hero"
                 className="w-full max-w-[1566px] h-[356px] object-cover rounded-xl shadow-lg"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
 
       {/* Browse by Type Section */}
-      <section className="py-12 bg-muted/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-2">Browse by Type</h2>
-            <p className="text-sm text-muted-foreground">Find the perfect vehicle for your needs</p>
-          </div>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-4 justify-items-center">
-            {carTypes.map((type) => (
-              <Card
-                key={type.name}
-                className="p-4 flex flex-col items-center justify-center text-center w-full max-w-[120px] h-[120px] hover:shadow-lg transition-shadow cursor-pointer bg-background border-border"
-              >
-                <type.icon className="h-8 w-8 mb-2 text-primary" />
-                <span className="text-sm font-medium">{type.name}</span>
-              </Card>
-            ))}
-          </div>
+      <section className="py-12 bg-muted/30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-2">Browse by Type</h2>
+          <p className="text-sm text-muted-foreground">Find the perfect vehicle for your needs</p>
+        </div>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-4 justify-items-center">
+          {carTypes.map((type) => (
+            <Card
+              key={type.name}
+              className="p-4 flex flex-col items-center justify-center text-center w-full max-w-[120px] h-[120px] hover:shadow-lg transition-shadow cursor-pointer bg-background border-border"
+            >
+              <type.icon className="h-8 w-8 mb-2 text-primary" />
+              <span className="text-sm font-medium">{type.name}</span>
+            </Card>
+          ))}
         </div>
       </section>
 

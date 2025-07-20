@@ -33,7 +33,7 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Navigation */}
-      <Navigation />
+      {/* <Navigation /> */}
 
       {/* Main Content */}
       <div className="flex-1 flex items-center justify-center p-4">
@@ -109,8 +109,8 @@ export default function LoginPage() {
           </CardContent>
         </Card>
       </div>
-      {/* Footer */}
-      <Footer />
+      {/* Footer
+      <Footer /> */}
     </div>
   )
 }

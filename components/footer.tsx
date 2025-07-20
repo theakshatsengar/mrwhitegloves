@@ -11,7 +11,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold text-blue-600 mb-2">Join CarCare</h2>
-            <p className="text-sm text-muted-foreground">Receive pricing updates, shopping tips & more!</p>
+            <p className="text-sm text-muted-foreground">Get 10% off on First Order! Subscribe Now!</p>
           </div>
           <div className="w-full md:w-auto flex justify-center border border-blue-200 dark:border-blue-800 rounded-full">
             <div className="flex items-center bg-muted rounded-full p-1 pr-1 w-full max-w-md">
