@@ -86,44 +86,48 @@ export function LandingPage() {
               <img
                 src="/images/products/dashboard_polish.png"
                 alt="Dashboard Polish"
-                className="w-full h-32 md:h-60 object-cover rounded-lg mb-3"
+                className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
               <h3 className="font-semibold text-sm mb-1">Dashboard Polish</h3>
-              <p className="text-xs text-muted-foreground mb-2">Shine & protect your dashboard</p>
-              <div className="text-sm font-bold text-primary">₹399</div>
+              <p className="text-xs text-muted-foreground mb-1">Shine & protect your dashboard</p>
+              <div className="text-sm font-bold text-primary mb-3">₹399</div>
+              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
             </Card>
 
             <Card className="p-4 text-center hover:shadow-lg transition-shadow">
               <img
                 src="/images/products/car_shampoo.png"
                 alt="Car Shampoo"
-                className="w-full h-32 md:h-60 object-cover rounded-lg mb-3"
+                className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
               <h3 className="font-semibold text-sm mb-1">Car Shampoo</h3>
-              <p className="text-xs text-muted-foreground mb-2">Gentle, effective cleaning</p>
-              <div className="text-sm font-bold text-primary">₹249</div>
+              <p className="text-xs text-muted-foreground mb-1">Gentle, effective cleaning</p>
+              <div className="text-sm font-bold text-primary mb-3">₹249</div>
+              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
             </Card>
 
             <Card className="p-4 text-center hover:shadow-lg transition-shadow">
               <img
                 src="/images/products/tire_shiner.png"
                 alt="Tire Shiner"
-                className="w-full h-32 md:h-60 object-cover rounded-lg mb-3"
+                className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
               <h3 className="font-semibold text-sm mb-1">Tire Shiner</h3>
-              <p className="text-xs text-muted-foreground mb-2">Glossy, new-look tires</p>
-              <div className="text-sm font-bold text-primary">₹299</div>
+              <p className="text-xs text-muted-foreground mb-1">Glossy, new-look tires</p>
+              <div className="text-sm font-bold text-primary mb-3">₹299</div>
+              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
             </Card>
 
             <Card className="p-4 text-center hover:shadow-lg transition-shadow">
               <img
                 src="/images/products/glass_cleaner.png"
                 alt="Glass Cleaner"
-                className="w-full h-32 md:h-60 object-cover rounded-lg mb-3"
+                className="w-full h-32 md:h-60 object-cover rounded-lg mb-2"
               />
               <h3 className="font-semibold text-sm mb-1">Glass Cleaner</h3>
-              <p className="text-xs text-muted-foreground mb-2">Crystal clear finish</p>
-              <div className="text-sm font-bold text-primary">₹249</div>
+              <p className="text-xs text-muted-foreground mb-1">Crystal clear finish</p>
+              <div className="text-sm font-bold text-primary mb-3">₹249</div>
+              <Button size="sm" className="w-full text-xs">Add to Cart</Button>
             </Card>
           </div>
         </div>
@@ -379,7 +383,7 @@ export function LandingPage() {
             <Card className="p-8 bg-blue-50 dark:bg-blue-950/20 border-blue-200 dark:border-blue-800 hover:shadow-lg transition-shadow">
               <div className="flex items-start justify-between">
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-3 text-foreground">Are You Looking For a Car ?</h3>
+                  <h3 className="text-xl font-bold mb-3 text-foreground">Are you looking for a car or want to sell your car?</h3>
                   <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
                     We are committed to providing our customers with exceptional service.
                   </p>
@@ -387,7 +391,7 @@ export function LandingPage() {
                     className="bg-blue-600 hover:bg-blue-700 text-white"
                     onClick={() => router.push("/car-marketplace")}
                   >
-                    Get Started
+                    Explore Marketplace
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </div>

@@ -30,19 +30,19 @@ export default function CarMarketplacePage() {
   ]
 
   const premiumBrands = [
-    { name: "Audi", logo: "/placeholder.svg?height=64&width=64&text=Audi+Logo" },
-    { name: "BMW", logo: "/placeholder.svg?height=64&width=64&text=BMW+Logo" },
-    { name: "Ford", logo: "/placeholder.svg?height=64&width=64&text=Ford+Logo" },
-    { name: "Mercedes Benz", logo: "/placeholder.svg?height=64&width=64&text=Mercedes+Logo" },
-    { name: "Peugeot", logo: "/placeholder.svg?height=64&width=64&text=Peugeot+Logo" },
-    { name: "Volkswagen", logo: "/placeholder.svg?height=64&width=64&text=VW+Logo" },
+    { name: "Audi", logo: "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg" },
+    { name: "BMW", logo: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" },
+    { name: "Ford", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ford_logo_flat.svg" },
+    { name: "Mercedes Benz", logo: "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" },
+    { name: "Peugeot", logo: "https://upload.wikimedia.org/wikipedia/en/9/9d/Peugeot_2021_Logo.svg" },
+    { name: "Volkswagen", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" },
   ]
 
   const featuredCars = [
     {
       id: 1,
       name: "BMW X5 2022",
-      image: "/placeholder.svg?height=200&width=300&text=BMW+X5",
+      image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=400&h=300&fit=crop",
       details: "25,000 km • Petrol • Automatic",
       price: "₹45,00,000",
       badge: { text: "Featured", color: "bg-green-500" },
@@ -50,7 +50,7 @@ export default function CarMarketplacePage() {
     {
       id: 2,
       name: "Audi A4 2021",
-      image: "/placeholder.svg?height=200&width=300&text=Audi+A4",
+      image: "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=300&fit=crop",
       details: "18,500 km • Petrol • Automatic",
       price: "₹32,50,000",
       badge: { text: "Certified", color: "bg-blue-500" },
@@ -58,7 +58,7 @@ export default function CarMarketplacePage() {
     {
       id: 3,
       name: "Mercedes C-Class 2023",
-      image: "/placeholder.svg?height=200&width=300&text=Mercedes+C-Class",
+      image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400&h=300&fit=crop",
       details: "12,000 km • Petrol • Automatic",
       price: "₹52,00,000",
       badge: { text: "Premium", color: "bg-purple-500" },
@@ -112,19 +112,19 @@ export default function CarMarketplacePage() {
       </section>
 
       {/* Browse by Type Section */}
-      <section className="py-12 bg-muted/30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
+      <section className="py-8 bg-muted/30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-6">
           <h2 className="text-2xl sm:text-3xl font-bold mb-2">Browse by Type</h2>
           <p className="text-sm text-muted-foreground">Find the perfect vehicle for your needs</p>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-4 justify-items-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3 justify-items-center">
           {carTypes.map((type) => (
             <Card
               key={type.name}
-              className="p-4 flex flex-col items-center justify-center text-center w-full max-w-[120px] h-[120px] hover:shadow-lg transition-shadow cursor-pointer bg-background border-border"
+              className="p-3 flex flex-col items-center justify-center text-center w-full max-w-[90px] h-[90px] hover:shadow-md transition-shadow cursor-pointer bg-background border-border"
             >
-              <type.icon className="h-8 w-8 mb-2 text-primary" />
-              <span className="text-sm font-medium">{type.name}</span>
+              <type.icon className="h-6 w-6 mt-1 text-primary" />
+              <span className="text-xs font-medium ">{type.name}</span>
             </Card>
           ))}
         </div>

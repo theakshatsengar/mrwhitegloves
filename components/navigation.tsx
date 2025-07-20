@@ -39,9 +39,6 @@ export function Navigation() {
             <h1 className="text-lg font-semibold cursor-pointer" onClick={() => handleNavigate("/")}>
               CarCare
             </h1>
-            {pathname !== "/" && (
-              <span className="text-sm text-muted-foreground hidden sm:block">{getPageTitle()}</span>
-            )}
           </div>
 
           {/* Desktop Navigation - Show on all pages */}
