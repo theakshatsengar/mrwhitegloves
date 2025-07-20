@@ -113,22 +113,22 @@ export function Footer() {
             </div>
             <div className="flex space-x-3">
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
-                <a href="#">
+                <a href="https://www.instagram.com/mrwhitegloves/" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
-                <a href="#">
+                <a href="https://www.facebook.com/whiteglovesjsr/" target="_blank" rel="noopener noreferrer">
                   <Facebook className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
-                <a href="#">
+                <a href="https://www.youtube.com/channel/UCLHvQliwtboqVI4w3MygCQA" target="_blank" rel="noopener noreferrer">
                   <Youtube className="h-4 w-4" />
                 </a>
               </Button>
               <Button variant="ghost" size="sm" className="h-8 w-8 p-0" asChild>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/mr-white-gloves" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-4 w-4" />
                 </a>
               </Button>
